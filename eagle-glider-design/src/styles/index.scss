@@ -1,0 +1,40 @@
+@import "./components/header.scss";
+
+.close {
+    color: red;
+  
+ 
+    animation: decrease 3s forwards;
+
+}
+.menu { color: aqua;
+   
+    width: 0px;
+    animation: enlargement 3s forwards;
+opacity: 1;}
+@keyframes enlargement {
+    0% { 
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+    
+}
+@keyframes decrease {
+    0% {
+        width: 100px;
+    }
+    100% {
+        width: 0px;
+    }
+    
+}
+.my-element {
+    overflow: hidden;
+    height: 200px;
+    background-color: green;
+    position: fixed;
+    display: flex;
+    transform: translate(-132px, 50px);
+}
