@@ -1,0 +1,56 @@
+header {
+    background: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 74px;
+    padding-left: 4.1%;
+    padding-right: 3.368%;
+    .logo{
+        height: 42px;
+    width: 147px;
+    object-fit: cover;
+    }
+    .mobile {
+        display: none;
+    }
+    nav {
+        width: 58.861%;
+        display: flex;
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            a {
+                color: #ffff;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        height: 46px;
+        padding-left: 4.875%;
+        padding-right: 6.67%;
+        .logo{
+            height: 22px;
+            width: 77px;
+            object-fit: cover;
+        }
+        .nav-desktop {display: none;}
+        .mobile {
+            height: 100%;
+            width: 35%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                height: 38px;
+                width: 28px;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,21 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+
 
 const MenuBurger = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const [navVisible, setNavVisible] = useState(true);
+ const [navClass, setNavClass] = useState('');
+let className
   const toggleMenu = () => {
+   setNavClass("close")
     setIsMenuOpen(!isMenuOpen);
+  
   };
   const test = ()=> {
-    setIsMenuOpen (false)
-  }
-  const className = isMenuOpen ? 'menu' : "close";
+   setNavClass("")
+    setNavVisible(false)
+  
+   
+  };
+  useEffect(()=> {
+    const timer = setTimeout(()=> {
+      setNavVisible(true);
+       setIsMenuOpen(false)
+    },500);
+    return ()=> clearTimeout(timer);
+  },[navVisible])
+ className = isMenuOpen ? 'menu' : `${navClass}`;
+ 
   return (
     <>
      
-        <img src="" alt="menu-burger"  onClick={toggleMenu} />
-      <nav className={`my-element ${className}`}> 
+        <div className="burger-menu"  onClick={toggleMenu} >
+          <span className="trait"></span>
+          <span className="trait"></span>
+          <span className="trait"></span>
+          </div>
+        {navVisible && (
+
+          <nav className={`my-element ${className}`}> 
       <ul>
         <NavLink to="/">
             <li onClick={test}>Accueil</li>
@@ -34,6 +56,7 @@ const MenuBurger = () => {
         </NavLink>
       </ul>
       </nav>
+        )}
     </>
   );
 };
