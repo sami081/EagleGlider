@@ -4,3 +4,13 @@
     list-style-type: none;
     text-decoration: none;
 }
+@font-face {
+    font-family: "Viga";
+    src: url(../../assets/fonts/Viga-Regular.ttf);
+}
+a, .burger-menu {
+    cursor: pointer;
+}
+body {
+    min-width: 320px;
+}

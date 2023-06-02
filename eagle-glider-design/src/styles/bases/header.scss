@@ -1,54 +1,90 @@
 header {
     background: #000000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 74px;
-    padding-left: 4.1%;
-    padding-right: 3.368%;
-    .logo{
-        height: 42px;
-    width: 147px;
-    object-fit: cover;
+    // padding-left: 4.1%;
+    // padding-right: 3.368%;
+    position: fixed;
+    width: 100%;
+   .logo {
+       
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
     }
     .mobile {
         display: none;
     }
     nav {
+        height: 100%;
         width: 58.861%;
         display: flex;
         ul {
+            margin-top: 20px;
             display: flex;
             width: 100%;
             justify-content: space-between;
-            a {
-                color: #ffff;
+            height: 74%;
+            a {display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #d8d9d9;
+                font-family: "Viga";
+                font-size: 1.2em;
+                &:hover {
+                    color: #ffff;
+                }
             }
         }
     }
-    
+    .nav-active{
+        color:#F1E102;
+        span{
+            display: flex;
+            width: 100%;
+            height: 10px;
+            background: linear-gradient(#F2B704, #F0850B);
+            border-radius: 2em;
+        }
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     header {
+        justify-content: space-between;
         height: 46px;
-        padding-left: 4.875%;
-        padding-right: 6.67%;
-        .logo{
-            height: 22px;
-            width: 77px;
-            object-fit: cover;
+        // padding-left: 4.875%;
+        // padding-right: 6.67%;
+        .link-logo{
+            margin-top: 20px;
+            height: 42px;
+            width: 19.3%
         }
-        .nav-desktop {display: none;}
+        .phone{
+            width: 35.1%;
+            img {
+                width: 100%;
+            }
+        }  
+        .logo {
+            height: 100%;
+            width:100%;
+            object-fit: contain;
+        }
+        .nav-desktop {
+            display: none;
+        }
         .mobile {
             height: 100%;
-            width: 35%;
+            width: 25%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
             img {
                 height: 38px;
-                width: 28px;
+              
                 object-fit: cover;
             }
         }
