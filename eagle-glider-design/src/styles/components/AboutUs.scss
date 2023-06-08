@@ -2,6 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    h2 {
+        color: #ea5d11;
+        font-family: "Viga";
+        font-weight: 200;
+        text-transform: capitalize;
+    }
     .all-character {
         display: flex;
         flex-direction: column;
@@ -16,19 +22,30 @@
                 object-fit: cover;
             }
             .information-character {
+                align-items: center;
+                justify-content: center;
+                display: flex;
                 height: 647px;
                 background: #000000;
                 width: 98.01%;
                 border-radius: 15px;
                 transform: translateY(-40px);
                 .inside-box {
+                    border: 2px solid #ea5d11;
+                    width: 95%;
+                    height: 95%;
+                    border-radius: 15px;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     h3 {
+                        text-align: left;
+                        width: 70%;
                         color: #ea5d11;
                     }
                     p {
+                        text-align: left;
+                        width: 70%;
                         color: #ffffff;
                     }
                 }
