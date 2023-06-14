@@ -1,6 +1,9 @@
 import React from 'react';
 import Hero from '../components/Home/Hero';
 import AboutUs from '../components/Home/AboutUs';
+import Separation from '../components/Separation';
+
+
 
 
 
@@ -10,6 +13,8 @@ const Home = () => {
         
 <Hero/>
 <AboutUs/>
+<Separation/>
+
         </>
     );
 };

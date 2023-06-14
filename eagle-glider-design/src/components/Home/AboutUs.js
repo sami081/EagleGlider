@@ -39,7 +39,7 @@ const AboutUs = () => {
       <aside>
         <p>
           A la fin d’une conversation, ils ont réalisé la valeur ajoutée qu’ils
-          pouvaient s’apporter l'un à l'autre. A partir de ce moment, la
+          pouvaient s’apporter l'un à l'autre.  <br />A partir de ce moment, la
           décision de créer un projet commun est née. Malgré leurs histoires
           différentes, ils unissent leurs passions respectives.
         </p>
