@@ -7,6 +7,7 @@ import LegalNotice from "./pages/LegalNotice";
 import Process from "./pages/Process";
 import Services from "./pages/Services";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 
 
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   );
 };

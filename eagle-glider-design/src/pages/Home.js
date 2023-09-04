@@ -7,6 +7,7 @@ import Separation from '../components/Separation';
 
 
 
+
 const Home = () => {
     return (
         <>
@@ -14,6 +15,7 @@ const Home = () => {
 <Hero/>
 <AboutUs/>
 <Separation/>
+
 
         </>
     );

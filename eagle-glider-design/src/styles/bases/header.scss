@@ -8,7 +8,7 @@ header {
     // padding-right: 3.368%;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 100;
    .logo {
        
         height: 100%;
@@ -41,7 +41,7 @@ header {
         }
     }
     .nav-active{
-        color:#F1E102;
+        color:#F1E102 !important;
         span{
             display: flex;
             width: 100%;
@@ -52,14 +52,14 @@ header {
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
     header {
         justify-content: space-between;
         height: 46px;
         // padding-left: 4.875%;
         // padding-right: 6.67%;
         .link-logo{
-            margin-top: 20px;
+        
             height: 42px;
             width: 19.3%;
             padding-left: 5%;
@@ -82,6 +82,7 @@ header {
         .mobile {
             height: 100%;
             width: 40%;
+            max-width: 140px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;

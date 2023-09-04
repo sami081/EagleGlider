@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     h2 {
         color: #ea5d11;
         font-family: "Viga";
@@ -12,6 +13,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
         .character {
             display: flex;
            
@@ -20,6 +22,7 @@
             img {
                
                 object-fit: cover;
+                border-radius: 15px;
             }
             .information-character {
                 align-items: center;
@@ -76,11 +79,42 @@
 }
 
 // mobile 
+@media screen and (max-width: 450px) {
+    .about-us{
+        height: 3100px;
+        .all-character{
+            height: 2800px;
+        }
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 650px){
+    .about-us{
+        height: 3500px;
+        .all-character{
+            height: 3100px;
+        }
+    }
+}
+@media screen and (min-width: 651px) and (max-width: 800px){
+    .about-us{
+        height: 3700px;
+        .all-character{
+            height: 3300px;
+        }
+    }
+}
+
 @media screen and (max-width: 850px) {
+    .about-us{
+        margin-top: 50px;
+        
+      
+    }
     .character{
         flex-direction: column;
         img{
             width: 88.32%;
+          
         }
         .information-character{
             height: 767px;
@@ -147,7 +181,9 @@
                     text-align: right !important;
                 }
                 p{
-                margin-right: 11.84%;    
+                margin-right: 11.84% !important;  
+                text-align: right !important;  
+                
                 }
             }
         }

@@ -4,6 +4,11 @@ import { NavLink } from 'react-router-dom';
 const Hero = () => {
     return (
        <div className='hero-banner'>
+         <video autoPlay muted loop>
+        <source src="./ressources/images/picture/test.mp4" type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+        
+      </video>
         <div className="title">
         <h1>EAGLE GLIDER <br /> DESIGN</h1>
         <h2>Construisons ensemble <br />votre projet</h2>
