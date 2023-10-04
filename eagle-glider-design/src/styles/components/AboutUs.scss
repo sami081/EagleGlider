@@ -121,7 +121,8 @@
             width: 98.01%;
             transform: translateY(-40px);
             .inside-box{
-                height: 98%;
+                height: 97%;
+                width: 92% !important;
                 h3{
                     margin-left: 17.6%;
                 }
@@ -135,8 +136,9 @@
 }
 @media screen and (min-width: 850px) {
     .about-us {
-        height: 1800px;
+        height: 2200px;
         justify-content: space-evenly;
+     
         h2{
             margin-top: 50px;
         }

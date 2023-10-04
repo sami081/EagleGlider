@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Footer = () => {
   return (
     <footer>
-      <div className="contact details">
+      <div className="contact">
         <img src="./ressources/images/icon/logo-footer.png" alt="logo-gray" />
         <h3>0695177148</h3>
         <h3>
@@ -20,40 +20,40 @@ const Footer = () => {
         <a href="http://www.facebook.fr"  target="_blank" rel="noopener noreferrer">
           {" "}
           <h3>
-            <img
+            {/* <img
               src="./ressources/images/icon/facebook.png"
               alt="logo-facebook"
-            />{" "}
+            />{" "} */}
             Facebook
           </h3>
         </a>
         <a href="http://www.twitter.fr"  target="_blank" rel="noopener noreferrer">
           {" "}
           <h3>
-            <img
+            {/* <img
               src="./ressources/images/icon/twitter.png"
               alt="logo-twitter"
-            />{" "}
+            />{" "} */}
             twitter
           </h3>
         </a>
         <a href="http://www.linkedin.fr"  target="_blank" rel="noopener noreferrer">
           {" "}
           <h3>
-            <img
+            {/* <img
               src="./ressources/images/icon/twitter.png"
               alt="linkedIn"
-            />{" "}
+            />{" "} */}
           linkedIn
           </h3>
         </a>
         <a href="http://www.instagram.fr"  target="_blank" rel="noopener noreferrer">
           {" "}
           <h3>
-            <img
+            {/* <img
               src="./ressources/images/icon/twitter.png"
               alt="instagram"
-            />{" "}
+            />{" "} */}
           instagram
           </h3>
         </a>
