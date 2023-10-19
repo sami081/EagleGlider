@@ -11,9 +11,9 @@ const Hero = () => {
       </video> */}
       <img src="./ressources/images/picture/globe-orange-4934065.webp" alt="" />
         <div className="title">
-        <h1>EAGLE GLIDER <br /> DESIGN</h1>
-        <h2>Construisons ensemble <br />votre projet</h2>
-        <NavLink to="/contact" className="contact"> <li>Contactez nous</li></NavLink>
+        <h1 className='title-hero'>EAGLE GLIDER <br /> DESIGN</h1>
+        <h2 className='text-hero'>Construisons ensemble votre projet</h2>
+        <NavLink to="/contact" className="contact"> <li className='contact-link'>Contactez nous</li></NavLink>
         </div>
     </div>
     );

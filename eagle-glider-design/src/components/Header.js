@@ -16,11 +16,11 @@ const Header = () => {
             </div>  
             <nav className='nav-desktop'>
               <ul>
-            <NavLink to="/process" className={(nav) => (nav.isActive ? "nav-active link" :"link")}><li>Processus
+            <NavLink to="/process" className={(nav) => (nav.isActive ? "nav-active link" :"link")}><li className='title-link'>Processus
             </li><span></span></NavLink>
-            <NavLink to="/achievements"className={(nav) => (nav.isActive ? "nav-active link " :"link")}><li>Réalisations</li><span></span></NavLink>
-            <NavLink to="/services"className={(nav) => (nav.isActive ? "nav-active link " :"link")}><li>Prestations</li><span></span></NavLink>
-            <NavLink to="/contact"className={(nav) => (nav.isActive ? "nav-active link" :"link")}><li>Contact</li><span></span></NavLink>
+            <NavLink to="/achievements"className={(nav) => (nav.isActive ? "nav-active link " :"link")}><li className='title-link'>Réalisations</li><span></span></NavLink>
+            <NavLink to="/services"className={(nav) => (nav.isActive ? "nav-active link " :"link")}><li className='title-link'>Prestations</li><span></span></NavLink>
+            <NavLink to="/contact"className={(nav) => (nav.isActive ? "nav-active link" :"link")}><li className='title-link'>Contact</li><span></span></NavLink>
             
             </ul>
             </nav>

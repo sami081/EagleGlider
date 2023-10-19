@@ -9,6 +9,9 @@ header {
     position: fixed;
     width: 100%;
     z-index: 100;
+    a{
+        height: 42px;
+    }
    .logo {
        
         height: 100%;
@@ -33,7 +36,7 @@ header {
                 justify-content: space-between;
                 color: #d8d9d9;
                 font-family: "Viga";
-                font-size: 1.2em;
+                font-size: 1.8em;
                 &:hover {
                     color: #ffff;
                 }
